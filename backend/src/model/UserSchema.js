@@ -3,8 +3,7 @@ import mongoose from 'mongoose';
 const UserSchema = new mongoose.Schema({
   username: {
     type: String,
-    required: true,
-    unique: true
+    required: true
   },
   useremail: {
     type: String,
@@ -16,7 +15,7 @@ const UserSchema = new mongoose.Schema({
     required: true
   },
   birthdate: {
-    type: String,
+    type: Date,
     required: true
   }
 });
