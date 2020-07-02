@@ -15,24 +15,7 @@ const PlaceSchema = new mongoose.Schema({
       required: true
     }
   },
-  ratings: [
-    {
-      username: {
-        type: String,
-        required: true,
-        unique: true
-      },
-      user_rate: {
-        type: Number,
-        required: true,
-        min: 1,
-        max: 5
-      },
-      user_comment: {
-        type: String
-      }
-    }
-  ],
+  ratings: [],
   average_rating: {
     type: Number
   },
@@ -42,4 +25,4 @@ const PlaceSchema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model('Place', PlaceSchema);
+export default mongoose.model('Place', PlaceSchema);
