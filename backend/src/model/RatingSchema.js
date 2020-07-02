@@ -6,6 +6,10 @@ const RatingSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
+  placename: {
+    type: String,
+    required: true
+  },
   user_rate: {
     type: Number,
     required: true,

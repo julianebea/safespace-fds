@@ -15,14 +15,7 @@ const PlaceSchema = new mongoose.Schema({
       required: true
     }
   },
-  ratings: [],
-  average_rating: {
-    type: Number
-  },
-  isFriendlyFlag: {
-    type: Boolean,
-    default: false
-  }
+  ratings: []
 });
 
 export default mongoose.model('Place', PlaceSchema);
